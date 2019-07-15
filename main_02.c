@@ -184,7 +184,7 @@ void *thr_dir_remove(void *data)
 	while(1)
 	{
 		float *ck =(float *)malloc(sizeof(float)*1);
-		*ck=0.3299;
+		*ck=0.25;
 		if(hardCheck()<*ck)
 		{
 			char *removetarget = (char*)malloc(sizeof(char)*100);
@@ -229,11 +229,11 @@ void *thr_cam(void *data)
 
 void camAction()
 {
-	system("python cam.py");
-/*
+//	system("python cam.py");
+
 	if(0!=system("python cam.py")){
 		printf("python error\n");
 		camAction();
 	}
-*/
+
 }
